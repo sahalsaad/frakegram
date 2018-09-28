@@ -69,5 +69,6 @@ gem 'devise'
 gem 'bootstrap', '~> 4.1.3'
 gem 'devise-i18n'
 gem 'devise-bootstrap-views', '~> 1.0'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave'
+gem 'mini_magick'
 

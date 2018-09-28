@@ -2,12 +2,11 @@
   "name": "fakegram",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^3.0.3",
-    "@material-ui/icons": "^3.0.1",
     "@rails/webpacker": "3.5",
     "babel-preset-react": "^6.24.1",
     "prop-types": "^15.6.2",
     "react": "^16.5.0",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.0",
     "react-on-rails": "11.1.3"
   },

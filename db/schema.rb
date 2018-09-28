@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_07_080907) do
+ActiveRecord::Schema.define(version: 2018_09_28_100345) do
+
+# Could not dump table "posts" because of following StandardError
+#   Unknown type 'reference' for column 'user_id'
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

@@ -1,46 +1,26 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-import Input from '@material-ui/core/Input';
-import FormControl from '@material-ui/core/FormControl';
+import {Button, ControlLabel, Form, FormControl, FormGroup} from "react-bootstrap";
+import ReactOnRails from 'react-on-rails';
 
-const styles = theme => ({
-  root: {
-    flexGrow: 1,
-    padding: 20
-  },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-  formControl: {
-    margin: theme.spacing.unit,
-  }
-});
-
-function CenteredGrid(props) {
-  const { classes } = props;
-
-  return (
-    <div className={classes.root}>
-      <Grid container justify="center" spacing="8">
-        <Grid item xs={4}>
-          <Paper className={classes.paper}>
-            <FormControl className={classes.formControl}>
-              <Input id="image" type="file" />
-            </FormControl>
-          </Paper>
-        </Grid>
-      </Grid>
-    </div>
-  );
+const onSubmit = (event) => {
+  event.preventDefault();
 }
 
-CenteredGrid.propTypes = {
-  classes: PropTypes.object.isRequired,
+const UploadForm = ({token}) => {
+  return (
+    <form action='/posts' method='post' encType="multipart/form-data">
+      <FormGroup controlId="image">
+        <ControlLabel>Upload Image</ControlLabel>
+        <FormControl name="image" type="file" />
+      </FormGroup>
+      <input type="hidden" name="authenticity_token" value={ReactOnRails.authenticityToken()} />
+      <FormGroup controlId="description">
+        <ControlLabel>Description</ControlLabel>
+        <FormControl name="description" componentClass="textarea" placeholder="Write your description here..." />
+      </FormGroup>
+      <Button bsStyle="primary" type="submit">Upload</Button>
+    </form>
+  );
 };
 
-export default withStyles(styles)(CenteredGrid);
+export default UploadForm;

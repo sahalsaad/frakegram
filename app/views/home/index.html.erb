@@ -1,1 +1,1 @@
-<%= react_component("Home", props: @home_props) %>
+<%= react_component("Home", props: @home_props.merge({token: form_authenticity_token})) %>

@@ -1,12 +1,12 @@
 import React from 'react';
-import AppBar from './AppBar';
-import UploadForm from "./UploadForm";
+import Header from './Header';
+import BodyContainer from "./BodyContainer";
 
-export default ({email}) => {
+export default ({token}) => {
   return (
     <div>
-      <AppBar />
-      <UploadForm/>
+      <Header />
+      <BodyContainer token={token}/>
     </div>
   )
 }

@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   layout "home"
 
   def index
-    @home_props = { email: current_user.email }
+    @posts = Post.all.order('created_at DESC')
+    @home_props = { email: current_user.email, posts: @posts }
   end
 end

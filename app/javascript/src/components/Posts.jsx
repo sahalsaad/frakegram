@@ -5,7 +5,7 @@ const Posts = ({posts}) => (
   <Row>
     {
       posts.map(post => (
-        <Col key={post.id} xs={6} md={6}>
+        <Col key={post.id} xs={12} md={12}>
           <Thumbnail src={post.image.url} alt="242x200">
             <p>{post.description}</p>
           </Thumbnail>

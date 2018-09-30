@@ -3,10 +3,10 @@ import {Nav, Navbar, NavItem} from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Navbar inverse collapseOnSelect>
+    <Navbar inverse collapseOnSelect fixedTop>
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="#">Frakegram</a>
+          <a href="#">frakegram</a>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>

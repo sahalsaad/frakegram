@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   before_action :authenticate_user!
-  layout "home"
 
   def index
     @posts = Post.where(user_id: current_user.id).order('created_at DESC')

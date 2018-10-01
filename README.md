@@ -1,24 +1,28 @@
 # frakegram
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### How to start
 
-Things you may want to cover:
+1. Clone the project:
+       
+       git clone https://github.com/sahalsaad/frakegram.git
+    
+2. Install javascript dependencies:
 
-* Ruby version
+        yarn install
+        
+3. Prepare the database:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+        bin/rails db:create
+        bin/rails db:migrate
+        
+4. Start the application
+        
+        bin/rails s
+        
+        
+### Gems in action
+    1. react_on_rails
+    2. devise
+    3. devise-bootstrap-views
+    4. carrierwave
+    5. mini_magick

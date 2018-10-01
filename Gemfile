@@ -66,7 +66,6 @@ gem 'react_on_rails', '11.1.3' # Use the exact gem version to match npm version
 
 gem 'mini_racer', platforms: :ruby
 gem 'devise'
-gem 'bootstrap', '~> 4.1.3'
 gem 'devise-i18n'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'carrierwave'

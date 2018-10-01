@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, Navbar, NavItem} from "react-bootstrap";
+import {Glyphicon, Nav, Navbar, NavItem} from "react-bootstrap";
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
       <Navbar.Collapse>
         <Nav pullRight>
           <NavItem href="/users/sign_out">
-            Logout
+            <Glyphicon glyph="log-out" />
           </NavItem>
         </Nav>
       </Navbar.Collapse>

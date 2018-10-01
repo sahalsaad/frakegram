@@ -8,7 +8,7 @@ const onSubmit = (event) => {
 
 const UploadForm = ({token}) => {
   return (
-    <form action='/posts' method='post' encType="multipart/form-data">
+    <form action='/posts' method='post' className="upload-form" encType="multipart/form-data">
       <FormGroup controlId="image">
         <ControlLabel>Upload Image</ControlLabel>
         <FormControl name="image" type="file" />

@@ -1,7 +1,6 @@
 import React from 'react';
-import Header from './Header';
-import BodyContainer from "./BodyContainer";
-import '../style/main.css'
+import Header from './components/Header';
+import BodyContainer from "./components/BodyContainer";
 
 export default ({token, posts}) => {
   return (

@@ -6,7 +6,7 @@ const onSubmit = (event) => {
   event.preventDefault();
 }
 
-const UploadForm = ({token}) => {
+const UploadForm = () => {
   return (
     <form action='/posts' method='post' className="upload-form" encType="multipart/form-data">
       <FormGroup controlId="image">

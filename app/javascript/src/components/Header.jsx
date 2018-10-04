@@ -13,7 +13,7 @@ const Header = () => {
       <Navbar.Collapse>
         <Nav pullRight>
           <NavItem href="/users/sign_out">
-            <Glyphicon glyph="log-out" />
+            <Glyphicon title="Logout" glyph="log-out" />
           </NavItem>
         </Nav>
       </Navbar.Collapse>

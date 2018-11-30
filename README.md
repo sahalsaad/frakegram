@@ -1,10 +1,10 @@
-# frakegram
+# picbuc
 
 ### How to start
 
 1. Clone the project:
        
-       git clone https://github.com/sahalsaad/frakegram.git
+       git clone https://github.com/sahalsaad/picbuc.git
     
 2. Install javascript dependencies:
 
